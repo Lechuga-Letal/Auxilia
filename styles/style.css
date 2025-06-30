@@ -24,7 +24,13 @@ article {
 }
 
 h2 {
+    color: #66142D;
     text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 .titulo {
@@ -54,6 +60,7 @@ article {
 }
 
 hr {
+    border-top: #EEF0FB solid 0.2em;
     max-width: 960px;
     margin: 0 auto;
 }
@@ -66,10 +73,34 @@ hr {
 .boton_emergencia_frecuente {
     padding: 1em;
     margin: 2em;
+    background-color: #EEF0FB;
+    border-radius: 2.5em;
+    min-width: 15em;
+}
+
+.boton_emergencia_frecuente p {
+    color: black;
+    margin: 0.5em;
 }
 
 .boton_emergencia_frecuente img {
     width: 5em;
+}
+
+.boton_bordo {
+    border: none;
+    background-color: #66142D;
+    color: white;
+    padding: 1em 2em;
+    border-radius: 1em;
+}
+
+.boton_gris_oscuro {
+    border: none;
+    background-color: #686868;
+    color: white;
+    padding: 1em 2em;
+    border-radius: 1em;
 }
 
 footer{
