@@ -4,15 +4,40 @@
     box-sizing: border-box;
 }
 
+main {
+  padding: 0 2em;
+}
+
+
+
 /*Temporalmente deje todo con flex, hay que definir como vamos a hacelo responsive...*/
 
 /*No diferencio el gris/blanco en el monitor asi que quizas no este presente en algun lugar...*/
-header{
+.navbar{
     background-color: #66142D;
-    color: white;
     padding: 1em 2em;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+#boton-same{
+    background-color: #C92C49;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+}
+#boton-same:hover{
+    background-color: #9b2239;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffffff !important;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #bbbaba !important;
 }
 
 header img {
@@ -61,21 +86,39 @@ article {
 
 hr {
     border-top: #EEF0FB solid 0.2em;
-    max-width: 960px;
     margin: 0 auto;
 }
+
+footer hr{
+    opacity: 1;
+}
+
 
 #secion_emergencias {
     display: flex; 
     flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fila-emergencia {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .boton_emergencia_frecuente {
     padding: 1em;
-    margin: 2em;
+    margin: 0.5em;
     background-color: #EEF0FB;
     border-radius: 2.5em;
-    min-width: 15em;
+    width: 12em;
+    height: 185px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
 .boton_emergencia_frecuente p {
@@ -83,16 +126,25 @@ hr {
     margin: 0.5em;
 }
 
-.boton_emergencia_frecuente img {
-    width: 5em;
+.boton_emergencia_frecuente:hover{
+    background-color: #d1d3db;
 }
 
+.boton_emergencia_frecuente img {
+    width: 6em;
+}
 .boton_bordo {
     border: none;
     background-color: #66142D;
     color: white;
     padding: 1em 2em;
-    border-radius: 1em;
+    border-radius: 2em;
+    text-decoration: none;
+    display: inline-block;               
+}
+
+.boton_bordo:hover{
+    background-color: #921c3f;
 }
 
 .boton_gris_oscuro {
@@ -104,7 +156,7 @@ hr {
 }
 
 footer{
-    background-color: #C92C49;
+    background-color: #66142D;
     color: white;
     padding: 1em 2em;
     display: flex;
@@ -113,4 +165,41 @@ footer{
 
 footer img {
     max-width: 65px;
+}
+
+
+.titulo-seccion {
+  color: #66142D;
+  font-weight: bold;
+}
+
+.card-nosotros {
+  background-color: #EEF0FB;
+  border-radius: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.texto-nosotros p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  color: #000;
+}
+
+.btn-conocer-mas {
+  background-color: #66142D;
+  color: white;
+  padding: 0.6em 2em;
+  border-radius: 2em;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.btn-conocer-mas:hover {
+  background-color: #4b0f22;
+}
+
+.imagen-nosotros img {
+  max-width: 250px;
+  height: auto;
 }
