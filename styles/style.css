@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Temporalmente deje todo con flex, hay que definir como vamos a hacelo responsive...*/
+
+/*No diferencio el gris/blanco en el monitor asi que quizas no este presente en algun lugar...*/
+header{
+    background-color: #66142D;
+    color: white;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
+    max-width: 65px;
+}
+
+article {
+    grid-template-columns: max-content;
+}
+
+h2 {
+    text-align: center;
+}
+
+.titulo {
+    background-color: #C92C49;
+    color: white;
+    padding: 1em;
+}
+
+.articulo_contenedor {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.articulo_seccion {
+    background-color: #EEF0FB;
+    margin: 1em 0;
+    border-radius: 2.5em;
+}
+
+/*Esto esta como place holder*/
+.articulo_seccion img {
+    max-width: 5em;
+}
+
+article {
+    text-align: center;
+}
+
+hr {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+#secion_emergencias {
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+.boton_emergencia_frecuente {
+    padding: 1em;
+    margin: 2em;
+}
+
+.boton_emergencia_frecuente img {
+    width: 5em;
+}
+
+footer{
+    background-color: #C92C49;
+    color: white;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer img {
+    max-width: 65px;
+}
