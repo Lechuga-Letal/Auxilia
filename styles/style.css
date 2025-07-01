@@ -111,8 +111,7 @@ footer hr{
     margin: 0.5em;
     background-color: #EEF0FB;
     border-radius: 2.5em;
-    width: 12em;
-    height: 185px;
+    width: 13em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -140,7 +139,8 @@ footer hr{
     padding: 1em 2em;
     border-radius: 2em;
     text-decoration: none;
-    display: inline-block;               
+    display: inline-block;       
+    text-align: center;        
 }
 
 .boton_bordo:hover{
@@ -168,9 +168,33 @@ footer img {
 }
 
 
+.sobre-nosotros {
+    margin-top: 3em;
+  position: relative;
+}
+
 .titulo-seccion {
   color: #66142D;
   font-weight: bold;
+
+  position: absolute;
+  
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  padding: 0 1rem;
+  z-index: 2;
+}
+
+.necesito-ayuda p{
+    font-size: 1.2em;
+}
+
+.estas-ante-emergencia h2{
+    color: #66142D;
+}
+.estas-ante-emergencia p{
+    font-size: 1.2em;
 }
 
 .card-nosotros {
@@ -179,9 +203,17 @@ footer img {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
+.texto-nosotros{
+    flex: 0 0 40%;
+  max-width: 40%;
+  margin-top: 4rem;
+  padding-right: 1rem;
+  padding-left: 4rem;
+}
+
 .texto-nosotros p {
   margin-bottom: 1.5rem;
-  font-size: 1rem;
+  font-size: 1.4rem;
   color: #000;
 }
 
@@ -199,7 +231,34 @@ footer img {
   background-color: #4b0f22;
 }
 
-.imagen-nosotros img {
-  max-width: 250px;
+.imagen-nosotros{
+    flex: 0 0 60%;
+    max-width: 60%;
+    margin-top: 10px;
+    position: relative;
+}
+
+.imagen-superpuesta {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 7em;
   height: auto;
+  z-index: 3;
+  padding: 1em;
+}
+
+.imagen-nosotros .img-fluid {
+  width: 100%;
+  height: auto;
+
+  /* Degradado en dos direcciones: izquierda y arriba */
+  -webkit-mask-image: 
+    linear-gradient(to right, transparent 0%, black 50%),
+    linear-gradient(to bottom, transparent 0%, black 50%);
+  -webkit-mask-composite: intersect;
+  mask-image: 
+    linear-gradient(to right, transparent 0%, black 50%),
+    linear-gradient(to bottom, transparent 0%, black 50%);
+  mask-composite: intersect;
 }
