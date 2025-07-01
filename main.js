@@ -7,5 +7,5 @@ function incluirParcial(id, archivo) {
     });
 }
 
-incluirParcial("header-placeholder", "Vistas/header.html");
-incluirParcial("footer-placeholder", "Vistas/footer.html");
+incluirParcial("header-placeholder", "header.html");
+incluirParcial("footer-placeholder", "footer.html");

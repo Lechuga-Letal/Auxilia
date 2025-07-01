@@ -1,7 +1,15 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 main {
@@ -61,7 +69,7 @@ a {
 .titulo {
     background-color: #C92C49;
     color: white;
-    padding: 1em;
+    padding: 0.5em;
 }
 
 .articulo_contenedor {
@@ -152,7 +160,12 @@ footer hr{
     background-color: #686868;
     color: white;
     padding: 1em 2em;
-    border-radius: 1em;
+    border-radius: 2em;
+}
+
+.boton_gris_oscuro:hover {
+
+  background-color: #9d9c9c;
 }
 
 footer{
@@ -173,7 +186,7 @@ footer img {
   position: relative;
 }
 
-.titulo-seccion {
+.titulo-sobre-nos {
   color: #66142D;
   font-weight: bold;
 
@@ -190,9 +203,10 @@ footer img {
     font-size: 1.2em;
 }
 
-.estas-ante-emergencia h2{
-    color: #66142D;
+.titulo-seccion{
+  color: #66142D;
 }
+  
 .estas-ante-emergencia p{
     font-size: 1.2em;
 }
@@ -262,3 +276,45 @@ footer img {
     linear-gradient(to bottom, transparent 0%, black 50%);
   mask-composite: intersect;
 }
+
+.contenedor-recorrido{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.preguntas{
+  background-color: #EEF0FB;
+  width: 50%;
+  border-radius: 1em;
+  padding-bottom: 40px;
+}
+
+#formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  gap: 1em; 
+}
+
+#boton-volver{
+  margin: 5px;
+  background-color: #C92C49;
+}
+
+#boton-volver:hover{
+  background-color: #9b2239;
+}
+
+#pregunta{
+  align-self: center;
+}
+
+.botones-si-no {
+  align-self: center; 
+  display: flex;
+  gap: 1em;
+}
+
