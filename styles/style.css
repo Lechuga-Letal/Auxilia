@@ -257,7 +257,7 @@ footer img {
 
 .imagen-nosotros .img-fluid {
   width: 100%;
-  height: auto;
+  height: 100%;
 
   /* Degradado en dos direcciones: izquierda y arriba */
   -webkit-mask-image: 
@@ -388,9 +388,11 @@ footer img {
 }
 
 .about-us{
+  position: relative;
   display: flex;
   background-color: #C92C49;
   width: 100%;
+  height: 500px;
 }
 
 .about-us-texto{
@@ -406,6 +408,8 @@ footer img {
 
 .about-us-imagen{
   width: 60%;
+  height: 100%;
+  overflow: hidden;
 
   -webkit-mask-image: 
     linear-gradient(to right, transparent 0%, black 50%);
@@ -414,16 +418,17 @@ footer img {
     linear-gradient(to right, transparent 0%, black 50%);
   mask-composite: intersect;
 
-  position: d;
+  position: relative;
 }
 
 a {
   text-decoration: none;
 }
 
-.about-us-imagen img{
+.about-us-imagen img:first-child {
   width: 100%;
-  max-height: 500px;
+  height: 100%;
+  object-fit: cover;
 }
 
 .about-us-info{
@@ -437,3 +442,105 @@ a {
   margin-top: 3em;
   margin-bottom: 0.5em;
 }
+
+@media (max-width: 768px) {
+
+  .imagen-superpuesta{
+    display: none;
+  }
+
+  .about-us {
+    flex-direction: column-reverse; /* Imagen arriba, texto abajo */
+    align-items: center;
+  }
+
+  .about-us-texto {
+    width: 90%;
+    margin-left: 0;
+    margin-top: 2em;
+    text-align: center;
+  }
+
+  .about-us-imagen {
+    width: 100%;
+
+    -webkit-mask-image: linear-gradient(to top, transparent 0%, black 50%);
+    mask-image: linear-gradient(to top, transparent 0%, black 50%);
+  }
+
+}
+
+@media (max-width: 450px){
+
+  #nombre-marca{
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .boton_emergencia_frecuente {
+    flex: 1 1 calc(50% - 1em);
+    max-width: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-nosotros {
+    flex-direction: column;
+    width: 100%;
+  }
+
+    .imagen-nosotros {
+    order: -1;
+  }
+
+  .titulo-sobre-nos{
+    position: relative;      
+    left: auto;
+    top: auto;
+    transform: none;         
+    margin: 1rem auto 0 auto; 
+    text-align: center;
+  }
+
+  .texto-nosotros {
+    width: 100% !important;
+    flex: 1 1 100% !important;
+    max-width: 100% !important;
+    margin-top: 2rem; /* o el valor que prefieras */
+    padding: 1rem; /* más cómodo para móvil */
+  }
+
+  .texto-nosotros .boton_bordo {
+    width: 100%;
+  }
+
+  .texto-nosotros p{
+    font-size: 0.9em;
+  }
+
+.imagen-nosotros {
+    flex: 1 1 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    margin-top: 0;
+  }
+
+  .imagen-nosotros img {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .imagen-nosotros .img-fluid {
+    mask-image: linear-gradient(to bottom, black 0%, transparent 100%) !important;
+    -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 100%) !important;
+
+    mask-composite: none !important;
+    -webkit-mask-composite: none !important;
+  }
+
+  .imagen-superpuesta {
+    display: none;
+  }
+}
+
