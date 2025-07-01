@@ -16,11 +16,6 @@ main {
   padding: 0 2em;
 }
 
-
-
-/*Temporalmente deje todo con flex, hay que definir como vamos a hacelo responsive...*/
-
-/*No diferencio el gris/blanco en el monitor asi que quizas no este presente en algun lugar...*/
 .navbar{
     background-color: #66142D;
     padding: 1em 2em;
@@ -511,8 +506,8 @@ a {
     width: 100% !important;
     flex: 1 1 100% !important;
     max-width: 100% !important;
-    margin-top: 2rem; /* o el valor que prefieras */
-    padding: 1rem; /* más cómodo para móvil */
+    margin-top: 2rem;
+    padding: 1rem;
   }
 
   .texto-nosotros .boton_bordo {
