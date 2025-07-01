@@ -387,6 +387,10 @@ footer img {
   text-align: start;
 }
 
+.articulo-texto h2{
+  text-align: start;
+}
+
 .about-us{
   position: relative;
   display: flex;
