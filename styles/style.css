@@ -5,7 +5,7 @@
 }
 
 html, body {
-  min-width: 100vh;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
   display: flex;
@@ -28,6 +28,13 @@ main {
     justify-content: space-between;
     align-items: center;
 }
+
+#container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
 
 #boton-same{
     background-color: #C92C49;
@@ -73,21 +80,6 @@ a {
     width: 100%;
 }
 
-.articulo_contenedor {
-    max-width: 960px;
-    margin: 0 auto;
-}
-
-.articulo_seccion {
-    background-color: #EEF0FB;
-    margin: 1em 0;
-    border-radius: 2.5em;
-}
-
-/*Esto esta como place holder*/
-.articulo_seccion img {
-    max-width: 5em;
-}
 
 article {
     text-align: center;
@@ -361,5 +353,37 @@ footer img {
 .imagen-guia{
   width: 150px;
   height: auto;
+}
+
+.articulo_contenedor {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.articulo_seccion {
+  background-color: #EEF0FB;
+  margin: 1em 0;
+  border-radius: 1em;
+  display: flex;
+  padding: 1em;
+}
+
+.articulo-imagen{
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.articulo-imagen img{
+  width: 60%;
+}
+
+.articulo-texto{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  align-items: flex-start;
+  text-align: start;
 }
 
