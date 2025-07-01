@@ -17,16 +17,17 @@
         <!--Obvio falta implementar js-->
         <article class="preguntas">
             <form id="formulario"> 
-            <button id="boton-volver" class="boton_bordo d-flex align-items-center gap-1 px-3 py-2 small">
+
+            <a href="home.html" id="boton-volver" class="boton_bordo d-flex align-items-center gap-1 px-3 py-2 small text-decoration-none">
                 <span class="fs-6">&larr;</span>
                 <span>Volver</span>
-            </button>
+            </a>
 
             <h3 id="pregunta">¿La persona está conciente?</h3>
 
             <div class="botones-si-no">
                 <button type="button" class="boton_bordo" id="button_si">Si</button>
-                <button type="button" class="boton_gris_oscuro" id="button_no">No</button>
+                <a href="recorridoDePreguntas2.html"><button type="button" class="boton_gris_oscuro" id="button_no">No</button></a>
             </div>
             
             </form>
@@ -34,7 +35,6 @@
 
     </div>
 
-    <script src="../funcionalidad/recorridoDePreguntas.js"></script>
     <div id="footer-placeholder"></div>
     <script src="../main.js"></script>
 </body>

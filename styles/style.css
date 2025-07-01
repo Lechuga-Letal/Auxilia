@@ -417,6 +417,10 @@ footer img {
   position: d;
 }
 
+a {
+  text-decoration: none;
+}
+
 .about-us-imagen img{
   width: 100%;
   max-height: 500px;
