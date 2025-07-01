@@ -9,7 +9,37 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 <body>
-    <div id="header-placeholder"></div>
+      <nav class="navbar navbar-expand-lg navbar-dark shadow-sm px-3">
+            <a class="navbar-brand" href="home.html">
+            <img src="../img/SVG/logo.svg" alt="Auxilia" width="60" height="60" class="d-inline-block align-text-center">
+                <span class="fw-bold" id="nombre-marca">Auxilia</span>
+            </a>
+
+            <div class="mx-auto position-absolute start-50 translate-middle-x">
+                <button id="boton-same" class="btn btn-sm px-3 py-2">
+                    <img src="../img/SVG/icono-llamada-entrante.svg" alt="">
+                    SAME 107
+                </button>
+            </div>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="articulos.html">Artículos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sobreNosotros.html">Sobre Nosotros</a>
+                </li>
+                </ul>
+            </div>
+        </nav>    
+        
     <div id="container" class="contenedor-recorrido">
         
         <div class="container d-flex justify-content-between align-items-start mt-5 mb-3 w-100">
@@ -41,8 +71,52 @@
 
     </div>
 
-    <div id="footer-placeholder"></div>
-    <script src="../main.js"></script>
+<footer class="text-white py-4 mt-5">
+  <div class="container px-0">
+    <div class="row mb-3 align-items-center">
+      <!-- Columna izquierda: dirección -->
+      <div class="col-md-12 d-flex flex-column">
+        <h6 class="fw-bold mb-3">Contacto</h6>
+
+        <div class="d-flex justify-content-between">
+          <p class="mb-2">CABA, Hipólito Yrigoyen 2070.</p>
+          <p class="mb-2 d-none d-md-block">contacto@auxilia.org</p>
+        </div>
+
+        <p class="mb-1">Atención de lunes a viernes, de 9 a 17hs</p>
+      </div>
+
+      <div class="col-12 d-block d-md-none text-end">
+        <p class="mb-0">contacto@auxilia.org</p>
+      </div>
+    </div>
+
+
+    <!-- Línea divisoria -->
+    <hr class="border-white border-3 w-100">
+
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <!-- Logo y nombre -->
+      <div class="d-flex align-items-center mb-3 mb-md-0">
+        <img src="../img/SVG/logo.svg" alt="Auxilia" width="30" height="30" class="me-2">
+        <span class="fw-bold fs-5">Auxilia</span>
+      </div>
+
+      <!-- Redes sociales -->
+      <div class="mb-3 mb-md-0">
+        <a href="#" class="text-white me-3"><i class="bi bi-facebook fs-5"></i></a>
+        <a href="#" class="text-white me-3"><i class="bi bi-twitter fs-5"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-instagram fs-5"></i></a>
+      </div>
+
+      <!-- Copyright -->
+      <div class="text-center text-md-end">
+        <small>Copyright © 2025 Todos los derechos reservados.</small>
+      </div>
+    </div>
+  </div>
+</footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
